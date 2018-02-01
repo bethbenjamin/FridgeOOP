@@ -114,8 +114,7 @@ namespace FridgeOOP
             }
             else if (foodAmount > 40)
             {
-                return "getting low"
-;
+                return "getting low";
             }
             else
             {
@@ -124,12 +123,12 @@ namespace FridgeOOP
 
         }
 
-        public string Clean(bool isDirty)
+        public string Clean()
             {
-                if (isDirty)
+                if (isClean)
                 {
                     isClean = false;
-                    return "I cleaned the fridge";
+                    return "it is dirty, it needs cleaned";
                 }
                 else
                 {
